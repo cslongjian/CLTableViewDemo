@@ -86,12 +86,54 @@ int main(int argc, const char * argv[]) {
         printf("%d",arrayQuick[x]);
     }
     
-    return 0;
+   
     
     //总结：递归调用循环的处理每次一基数排序后的数组。注意基数循环的方向。
 //    时间复制度。最差的条件下是和冒泡排序一样 N的平方。最优就是1;平均值是O(NlogN);
     
 //    排序算法还有许多种。选择排序、计数排序、基数排序、插入排序、归并排序、堆排序等等
+    printf("\n\n\n判定字符是否重复出现。列举出来出现的次数----------");
+    //如果是ascii码的话，就可以这样搞。。
+    char str[] = "abcdbflmhlb";
+    int s = (int) strlen(str);
+    printf("\n字符串长度---：%lu",strlen(str));
+    printf("\n输出的字符---：%s",str);
+    printf("\n输出的字符---：%c",str[0]);
+    printf("\n输出的字符的ascii码值---：%d",str[0]);
+    int strCheck[256] = {0};
+    if (s>256) {
+         printf("\n一定存在重复字符");
+    }
+    
+    for(int i= 0 ;i<s;i++)
+    {
+        if (strCheck[str[i]]) {
+            strCheck[str[i]] = strCheck[str[i]]+1;
+            printf("\n重复字符是---：%c",str[i]);
+//            printf("\n重复出现次数---：%d",strCheck[str[i]]);
+        }
+        if (strCheck[str[i]]>=1) {
+            
+        }else
+        {
+            strCheck[str[i]] = 1;
+        }
+    }
+    
+       printf("\n\n\n----------------");
+    for (int j= 0; j<256; j++) {
+        if (strCheck[j]>1) {
+            char c = (char)j;
+           
+            printf("\n重复字符是---：%c",c);
+            printf("\n重复出现次数---：%d",strCheck[j]);
+        }
+    }
+    
+    
+    printf("\n");
+    
+     return 0;
     
 }
 
