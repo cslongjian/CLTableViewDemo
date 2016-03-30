@@ -10,7 +10,7 @@
 
 void quickdsort(int left, int right, int array[]);
 
-int main(int argc, const char * argv[]) {
+int mains(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
     //公用数据部分
