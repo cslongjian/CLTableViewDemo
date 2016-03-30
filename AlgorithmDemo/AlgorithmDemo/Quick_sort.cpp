@@ -10,7 +10,7 @@
 
 void quickdsort(int left, int right, int array[]);
 
-int main(int argc, const char * argv[])
+int mainQ(int argc, const char * argv[])
 {
     printf("快速排序样例\n");
     
@@ -23,6 +23,10 @@ int main(int argc, const char * argv[])
     }
     printf("\n");
     return 0;
+    
+    
+    //总结：递归调用循环的处理每次一基数排序后的数组。注意基数循环的方向。
+    //    时间复制度。最差的条件下是和冒泡排序一样 N的平方。最优就是1;平均值是O(NlogN);
 }
 
 

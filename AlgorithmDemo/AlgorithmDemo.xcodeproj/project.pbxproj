@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE0302B91CABCFD100D2018D /* Merge_sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE0302B71CABCFD100D2018D /* Merge_sort.cpp */; };
 		DE0302BB1CABD0B200D2018D /* Quick_sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE0302BA1CABD0B200D2018D /* Quick_sort.cpp */; };
+		DE0302BD1CABD65900D2018D /* Bubble_sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE0302BC1CABD65900D2018D /* Bubble_sort.cpp */; };
 		DE8753CE1C4FE8C4007CF6B5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DE8753CD1C4FE8C4007CF6B5 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		DE0302B71CABCFD100D2018D /* Merge_sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Merge_sort.cpp; sourceTree = "<group>"; };
 		DE0302BA1CABD0B200D2018D /* Quick_sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quick_sort.cpp; sourceTree = "<group>"; };
+		DE0302BC1CABD65900D2018D /* Bubble_sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bubble_sort.cpp; sourceTree = "<group>"; };
 		DE8753CA1C4FE8C4007CF6B5 /* AlgorithmDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8753CD1C4FE8C4007CF6B5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0302BE1CABD7FA00D2018D /* sort */ = {
+			isa = PBXGroup;
+			children = (
+				DE0302B71CABCFD100D2018D /* Merge_sort.cpp */,
+				DE0302BA1CABD0B200D2018D /* Quick_sort.cpp */,
+				DE0302BC1CABD65900D2018D /* Bubble_sort.cpp */,
+			);
+			name = sort;
+			sourceTree = "<group>";
+		};
 		DE8753C11C4FE8C4007CF6B5 = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +73,8 @@
 		DE8753CC1C4FE8C4007CF6B5 /* AlgorithmDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DE0302BE1CABD7FA00D2018D /* sort */,
 				DE8753CD1C4FE8C4007CF6B5 /* main.c */,
-				DE0302B71CABCFD100D2018D /* Merge_sort.cpp */,
-				DE0302BA1CABD0B200D2018D /* Quick_sort.cpp */,
 			);
 			path = AlgorithmDemo;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 				DE0302B91CABCFD100D2018D /* Merge_sort.cpp in Sources */,
 				DE0302BB1CABD0B200D2018D /* Quick_sort.cpp in Sources */,
 				DE8753CE1C4FE8C4007CF6B5 /* main.c in Sources */,
+				DE0302BD1CABD65900D2018D /* Bubble_sort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
