@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[])
+int mainQQ(int argc, const char * argv[])
 {
     printf("Hello,C++  World!\n");
     printf("合并排序\n");
